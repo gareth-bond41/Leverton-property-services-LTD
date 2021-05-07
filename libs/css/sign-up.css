@@ -1,0 +1,46 @@
+.sign-up-form {
+    text-align: center;
+    border-top: 5px solid black;
+    padding: 0 0 50px 0;
+    background-color: #DCDCDC;
+}
+
+.sign-up-form h2 {
+    font-size: 50px;
+}
+
+.sign-up-form label {
+    font-size: 30px;
+}
+
+.sign-up-form h2, .sign-up-form label, .sign-up-form input {
+    color: #0D1C32;
+    font-family: 'Spartan', sans-serif;
+}
+
+.sign-up-form input, .sign-up-form textarea {
+    font-size: 20px;
+}
+
+.sign-up-form textarea {
+    width: 500px;
+    height: 200px;
+}
+
+.sign-up-form button {
+    font-size: 30px;
+}
+
+.sign-up-form button:hover {
+    opacity: 0.7;
+    background-color: rgb(65, 64, 64);
+    color: white;
+}
+
+.sign-up-form p {
+    border-top: 2px solid black;
+    margin: 50px 200px 0 200px;
+    color: #0D1C32;
+    font-family: 'Spartan', sans-serif;
+    padding-top: 50px;
+}

@@ -1,0 +1,30 @@
+#mapid {
+    height: 600px;
+    border-top: 5px solid black;
+}
+
+.places-links {
+    background-color: #0D1C32;
+    border-top: 5px solid black;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.places-links h2 {
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.places-links .thorne {
+    border-right: 2px solid white;
+}
+
+.places-links .house4 {
+    border-left: 2px solid white;
+}
+
+.places-links .wheatley {
+    border-right: 2px solid white;
+}
