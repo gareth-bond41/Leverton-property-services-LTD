@@ -73,7 +73,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: absolute;
-    top: 200px; left: 50px;
+    top: 250px; left: 50px;
 }
 
 .award-win-text span {
@@ -83,7 +83,7 @@ html {
 .sign-up-box {
     z-index: 2;
     position: absolute;
-    top: 600px; left: 50px;
+    top: 800px; left: 50px; 
     background: none;
     border: 4px solid black;
     padding: 10px;
@@ -129,7 +129,7 @@ html {
 }
 
 .ratings .rateImg .img1:hover, .ratings .rateImg .img2:hover, .ratings .rateImg .img3:hover, .ratings .rateImg .img4:hover, .ratings .rateImg .img5:hover, .ratings .rateImg .img6:hover {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .rate-hide1, .rate-hide2, .rate-hide3, .rate-hide4, .rate-hide5, .rate-hide6 {
@@ -140,48 +140,42 @@ html {
 
 .rate-hide1 p {
     font-family: 'Spartan', sans-serif;
-    color: #0D1C32;
-    background-color: white;
+    color: white;
     margin-top: -240px;
     padding: 100px 0 100px 0;
 }
 
     .rate-hide2 p {
         font-family: 'Spartan', sans-serif;
-        color: #0D1C32;
-        background-color: white;
+        color: white;
         margin-top: -240px;
         padding: 70px 0 70px 0;
     }
 
         .rate-hide3 p {
             font-family: 'Spartan', sans-serif;
-            color: #0D1C32;
-            background-color: white;
+            color: white;
             margin-top: -240px;
             padding: 70px 0 70px 0;
         }
 
             .rate-hide4 p {
                 font-family: 'Spartan', sans-serif;
-                color: #0D1C32;
-                background-color: white;
+                color: white;
                 margin-top: -240px;
                 padding: 100px 0 100px 0;
             }
 
                 .rate-hide5 p {
                     font-family: 'Spartan', sans-serif;
-                    color: #0D1C32;
-                    background-color: white;
+                    color: white;
                     margin-top: -240px;
                     padding: 70px 0 70px 0;
                 }
 
                     .rate-hide6 p {
                         font-family: 'Spartan', sans-serif;
-                        color: #0D1C32;
-                        background-color: white;
+                        color: white;
                         margin-top: -240px;
                         padding: 80px 0 80px 0;
                     }
@@ -299,4 +293,93 @@ footer .copyright-foot {
     border-top: 5px solid black;
 }
 
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+    .nav-item a {
+        font-size: 20px;
+    }
+
+    .title-bar h1 {
+        font-size: 3em;
+    }
+
+    .sign-up-img {
+        height: 400px;
+    }
+
+    .award-win-text {
+        font-size: 25px;
+        right: 50px;
+    }
+
+    .award-win-text span {
+        font-size: 15px;
+    }
+
+    .sign-up-box {
+        top: 500px; right: 50px;
+        text-align: center;
+    }
+
+    #rate-hide {
+        font-size: 10px;
+        padding: 0;
+    }
+
+}
+
+/* Ratings images */
+
+@media only screen and (max-width: 1000px) {
+    .ratings {
+        grid-template-columns: auto;
+    }
+
+    .rate-hide1 p {
+        font-family: 'Spartan', sans-serif;
+        color: white;
+        margin-top: -290px; 
+        font-size: 30px;
+    }
+    
+        .rate-hide2 p {
+            font-family: 'Spartan', sans-serif;
+            color: white;
+            margin-top: -290px;
+            font-size: 30px;
+        }
+    
+            .rate-hide3 p {
+                font-family: 'Spartan', sans-serif;
+                color: white;
+                margin-top: -240px;
+                font-size: 30px;
+            }
+    
+                .rate-hide4 p {
+                    font-family: 'Spartan', sans-serif;
+                    color: white;
+                    margin-top: -240px;
+                    font-size: 30px;
+                }
+    
+                    .rate-hide5 p {
+                        font-family: 'Spartan', sans-serif;
+                        color: white;
+                        margin-top: -240px;
+                        font-size: 30px;
+                    }
+    
+                        .rate-hide6 p {
+                            font-family: 'Spartan', sans-serif;
+                            color: white;
+                            margin-top: -240px;
+                            font-size: 30px;
+                        }
+
+    .star-rating1, .star-rating2, .star-rating3, .star-rating4, .star-rating5, .star-rating6 {
+        margin-bottom: 5%;
+    }                   
+}
 

@@ -28,3 +28,15 @@
 .places-links .wheatley {
     border-right: 2px solid white;
 }
+
+@media only screen and (max-width: 1000px) {
+    .places-links h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .places-links h2 {
+        font-size: 20px;
+    }
+}
