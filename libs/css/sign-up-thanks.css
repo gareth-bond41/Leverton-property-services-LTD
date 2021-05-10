@@ -1,0 +1,20 @@
+.thanks {
+    background-color: #627FB0;
+    border-top: 5px solid black;
+    padding: 5%;
+}
+
+.thanks h1 {
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+    border: 3px solid black;
+    border-radius: 1.5em;
+    padding: 5%;
+    background-color: #0D1C32;
+    color: white;
+    text-align: center;
+}
+
+.thanks h1 span {
+    font-size: 25px;
+}

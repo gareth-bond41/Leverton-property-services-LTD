@@ -327,6 +327,13 @@ footer .copyright-foot {
         padding: 0;
     }
 
+    .thanks h1 {
+        font-size: 20px;
+    }
+
+    .thanks h1 span {
+        font-size: 15px;
+    }
 }
 
 /* Ratings images */
