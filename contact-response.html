@@ -6,9 +6,12 @@
     
         <!-- Viewport for mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+        <!-- Leaflet styles -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     
         <!-- CSS styles -->
-        <link href="libs/css/sign-up.css" rel="stylesheet" type="text/css">
+        <link href="libs/css/locations.css" rel="stylesheet" type="text/css">
 
         <link href="libs/css/sign-up-thanks.css" rel="stylesheet" type="text/css">
 
@@ -18,7 +21,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&family=Spartan:wght@200&display=swap" rel="stylesheet">
     
-        <title> Leverton Property Services LTD | About us </title>
+        <title> Leverton Property Services LTD | Contact us </title>
     
     </head>
         
@@ -38,10 +41,10 @@
         </div>
 
         <div class="thanks">
-            <h1> We operate as a family run property business in and around the doncaster area. <br> </h1>
+            <h1> We've recieved your message and we're considering your proposal. We aim to get back to all our customers within 24 hours of recieving the message. Please be patient and if you have any further enquiries then please contact us via telephone. <br> &#9742; +447745679845  <br><br><span> We'll contact you shortly via email to confirm your message processing <br><br>Meanwhile check out some of our current locations and past projects</span></h1>
         </div>
-        
-    </body>
+
+        <div class="map" id="mapid"></div>
 
     <footer>
 
@@ -64,4 +67,14 @@
     
     </footer>
 
+    <!-- External leaflet map script -->
+    <script type="application/javascript" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <!-- JQuery script -->
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+
+    <!-- Map script -->
+    <script type="application/javascript" src="libs/js/locations.js"></script>
+
+</body>
 </html>

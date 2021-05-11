@@ -10,6 +10,8 @@
         <!-- CSS styles -->
         <link href="libs/css/sign-up.css" rel="stylesheet" type="text/css">
 
+        <link href="libs/css/form.css" rel="stylesheet" type="text/css">
+
         <link href="libs/css/home.css" rel="stylesheet" type="text/css">
     
         <!-- Google fonts -->
@@ -37,16 +39,16 @@
 
         <div class="sign-up-form">
 
-            <form action="">
+            <form name="myForm" action="contact-response.html">
                 <h2> Concact us with any accomodation enquiries </h2>
                 <label for="fname">First name</label><br>
-                    <input type="text" id="fname" name="fname"><br><br><br>
+                    <input type="text" id="fname" name="fname" required><br><br><br>
                 <label for="lname">Last name</label><br>
-                    <input type="text" id="lname" name="lname"> <br><br><br>
+                    <input type="text" id="lname" name="lname" required> <br><br><br>
                 <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email"><br><br><br>
+                    <input type="text" id="email" name="email" required><br><br><br>
                 <label for="message" id="message" name="message">Message</label><br>
-                    <textarea placeholder="Enter your message here..."></textarea><br><br><br>
+                    <textarea placeholder="Enter your message here..." required minlength="30" maxlength="1000"></textarea><br><br><br>
                 
                 
                     <button id="submit" type="submit" value="submit">Submit</button>
@@ -55,8 +57,6 @@
             <p> We're working hard to respond to any business enquiries within 24 hours of the message being posted <br> We appreciate your patience in these challenging times</p>
 
         </div> 
-
-    </body>
 
     <footer>
 
@@ -78,5 +78,17 @@
         <div class="copyright-foot"> &copy; Copyright 2021 | Leverton Property Services LTD. </div>
     
     </footer>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+                if (x == "") {
+                    alert("Name must be filled out");
+                return false;
+        }
+  }
+    </script>
+
+</body>
 
 </html>

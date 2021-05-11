@@ -122,136 +122,34 @@ html {
     background-color: #627FB0;
 }
 
-.ratings .rateImg {
+.ratings .container {
+    margin: 5%;
+    text-align: center;
+    position: relative;
+}
+
+.ratings .container img {
     border: 10px double black;
-    margin: 10%;
-    text-align: center;
 }
 
-.ratings .rateImg .img1:hover, .ratings .rateImg .img2:hover, .ratings .rateImg .img3:hover, .ratings .rateImg .img4:hover, .ratings .rateImg .img5:hover, .ratings .rateImg .img6:hover {
-    opacity: 0.1;
-}
-
-.rate-hide1, .rate-hide2, .rate-hide3, .rate-hide4, .rate-hide5, .rate-hide6 {
-    display: none;
-    width: 100%;
-    height: 100%;
-}
-
-.rate-hide1 p {
-    font-family: 'Spartan', sans-serif;
-    color: white;
-    margin-top: -240px;
-    padding: 100px 0 100px 0;
-}
-
-    .rate-hide2 p {
-        font-family: 'Spartan', sans-serif;
-        color: white;
-        margin-top: -240px;
-        padding: 70px 0 70px 0;
-    }
-
-        .rate-hide3 p {
-            font-family: 'Spartan', sans-serif;
-            color: white;
-            margin-top: -240px;
-            padding: 70px 0 70px 0;
-        }
-
-            .rate-hide4 p {
-                font-family: 'Spartan', sans-serif;
-                color: white;
-                margin-top: -240px;
-                padding: 100px 0 100px 0;
-            }
-
-                .rate-hide5 p {
-                    font-family: 'Spartan', sans-serif;
-                    color: white;
-                    margin-top: -240px;
-                    padding: 70px 0 70px 0;
-                }
-
-                    .rate-hide6 p {
-                        font-family: 'Spartan', sans-serif;
-                        color: white;
-                        margin-top: -240px;
-                        padding: 80px 0 80px 0;
-                    }
-
-.star-rating1 {
-    margin-top: -100px;
-}
-    .star-rating2 {
-        margin-top: -60px;
-    }
-
-        .star-rating3 {
-            margin-top: -60px;
-        }
-
-            .star-rating4 {
-                margin-top: -100px;
-            }
-
-                .star-rating5 {
-                    margin-top: -70px;
-                }
-
-                    .star-rating6 {
-                        margin-top: -80px;
-                    }
-
-                        .checked {
-                            color: orange;
-                        }
-
-/* star rating */
-
-.rate-self {
-    font-family: 'Spartan', sans-serif;
-    color: white;
-    text-align: center;
-    background-color: #627FB0;
-}
-
-.rate-self h2 {
-    margin: 0;
-    font-size: 30px;
-}
-
-.rate {
-    text-align: center;
-    height: 46px;
-    padding: 20px 0 50px 0;
-}
-
-.rating > span:hover:before {
-    content: "\2605";
+.container-text1, .container-text2, .container-text3, .container-text4, .container-text5, .container-text6 {
     position: absolute;
- }
-
-.rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-}
-
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-     content: "\2605";
-     position: absolute;
-  }
-
-.rate .rate-submit {
-    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Spartan', sans-serif;
+    /* color: #0D1C32; */
     color: white;
+    display: none;
+    line-height: 20px;
 }
 
-.rate .rate-submit:hover {
-    background-color: rgb(65, 64, 64);
-    opacity: 0.7;
+.checked {
+    color: orange;
+}
+
+.ratings .img1:hover, .ratings .img2:hover, .ratings .img3:hover, .ratings .img4:hover, .ratings .img5:hover, .ratings .img6:hover {
+    opacity: 0.1;
 }
 
 /* Footer */
@@ -295,6 +193,27 @@ footer .copyright-foot {
 
 /* Responsive design */
 
+@media only screen and (max-width: 1400px) {
+    .ratings {
+        grid-template-columns: auto auto;
+    }
+
+    .container-text1, .container-text2, .container-text3, .container-text4, .container-text5, .container-text6 {
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .ratings {
+        grid-template-columns: auto;
+    }
+    
+    .container-text1, .container-text2, .container-text3, .container-text4, .container-text5, .container-text6 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .nav-item a {
         font-size: 20px;
@@ -322,11 +241,6 @@ footer .copyright-foot {
         text-align: center;
     }
 
-    #rate-hide {
-        font-size: 10px;
-        padding: 0;
-    }
-
     .thanks h1 {
         font-size: 20px;
     }
@@ -336,57 +250,10 @@ footer .copyright-foot {
     }
 }
 
-/* Ratings images */
-
-@media only screen and (max-width: 1000px) {
-    .ratings {
-        grid-template-columns: auto;
+@media only screen and (max-width: 650px) {
+    .container-text1, .container-text2, .container-text3, .container-text4, .container-text5, .container-text6 {
+        font-size: 15px;
+        line-height: 20px;
     }
-
-    .rate-hide1 p {
-        font-family: 'Spartan', sans-serif;
-        color: white;
-        margin-top: -290px; 
-        font-size: 30px;
-    }
-    
-        .rate-hide2 p {
-            font-family: 'Spartan', sans-serif;
-            color: white;
-            margin-top: -290px;
-            font-size: 30px;
-        }
-    
-            .rate-hide3 p {
-                font-family: 'Spartan', sans-serif;
-                color: white;
-                margin-top: -240px;
-                font-size: 30px;
-            }
-    
-                .rate-hide4 p {
-                    font-family: 'Spartan', sans-serif;
-                    color: white;
-                    margin-top: -240px;
-                    font-size: 30px;
-                }
-    
-                    .rate-hide5 p {
-                        font-family: 'Spartan', sans-serif;
-                        color: white;
-                        margin-top: -240px;
-                        font-size: 30px;
-                    }
-    
-                        .rate-hide6 p {
-                            font-family: 'Spartan', sans-serif;
-                            color: white;
-                            margin-top: -240px;
-                            font-size: 30px;
-                        }
-
-    .star-rating1, .star-rating2, .star-rating3, .star-rating4, .star-rating5, .star-rating6 {
-        margin-bottom: 5%;
-    }                   
 }
 

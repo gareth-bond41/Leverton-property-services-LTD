@@ -1,3 +1,4 @@
+// Map 1
 var mymap = L.map('mapid').setView([53.5024, -1.0745], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
